@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCSS Tut</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+        <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+    
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<img src="./assets/images/3.jpg" alt="Good Image" class="img-fluid">
+
+
+<section class="container-fluid about">
+    <div class="row">
+        <div class="col-md-5 col-lg-6">
+            <img src="./assets/images/4.jpg" alt="Better Image" class="img-fluid">
+        </div>
+    
+        <div class="col-md-7 col-lg-6">
+            <h2>About Design</h2>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, voluptatibus. Dolores porro illo harum
+                fuga libero possimus magnam nam nesciunt! Quas, mollitia nemo. Ad perspiciatis non harum similique
+                cupiditate ipsam quo earum quas quos vero inventore sunt consequatur illo, facilis exercitationem aliquid
+                laudantium enim id voluptatem, facere veritatis consectetur totam! Distinctio, ad dolorem, consequuntur ex
+                deserunt maxime explicabo laboriosam corrupti, dolorum odio quaerat maiores nisi? Facilis pariatur, maxime
+                nulla at eius doloremque cupiditate. Cumque eos, temporibus tempora nihil ad esse fugit eaque in blanditiis
+                perferendis aspernatur veritatis illum ut atque laborum nisi accusantium repudiandae vel iste totam odit
+                perspiciatis accusamus!
+            </p>
+            <a href="#" class="btn float-end">Read More</a>
+        </div>
+    </div>
+</section>
+
+<!-- our design section -->
+<section class="container-fluid designs">
+    <div class="row">
+        <div class="col-md-6 col-lg-5">
+            <h2>Our Designs</h2>
+            <dl>
+                <dt>Mansion</dt>
+                <dd>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, non autem. Rem hic error minima
+                    voluptates omnis ullam voluptate sit?
+                </dd>
+    
+                <dt>Bungalows</dt>
+                <dd>Lorem ipsum dolor  quod iste magni, facilis nulla? Voluptas, sequi repellendus.</dd>
+    
+                <dt>Cabins</dt>
+                <dd>Lorem ipsum dolor unde beatae animi! Eaque, incidunt earum!</dd>
+    
+                <dt>Farm Houses</dt>
+                <dd>Lorem ipsum dolor  tenetur repellendus voluptatem nisi veritatis, animi temporibus.</dd>
+    
+                <dt>Outerman</dt>
+                <dd>Lorem ipsum dolor earum quia incidunt ducimus tempora ad.</dd>
+            </dl>
+        </div>
+        <div class="col-md-6 col-lg-7">
+            <img src="./assets/images/1.jpg" alt="Best Image" class="img-fluid">
+        </div>
+    </div>
+</section>
+
+<section class="container-fluid contact">
+    <h2>Contact Us</h2>
+    <p class="lead">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda voluptas doloremque ratione dicta accusamus. Perspiciatis fugit voluptatem accusamus? Quos inventore voluptatum at modi ab? Quis culpa perferendis alias perspiciatis nisi, eos laudantium dolor hic eum recusandae rem. Beatae odio porro quaerat quasi ratione! Expedita, earum tempore? Porro, sequi dicta! Dolorum.
+    </p>
+
+    <div class="row g-3">
+       <div class="col-md-8">
+            <div class="card">
+                <form action="#" class="form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group mb-3" >
+                                <label for="name">Full Name</label>
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                        </div>
+            
+                        <div class="col-md-6">
+                            <div class="form-group mb-3">
+                                <label for="email">Email Address</label>
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group mb-3">
+                        <label for="Description">Description</label>
+                    <textarea name="desc" id="" class="form-control" rows="5" class="form-control"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Send Message</button>
+            
+                </form>
+            </div>
+       </div>
+
+       <div class="col-md-4">
+           <div class="card address">
+               <ul>
+                <li>
+                    <i class="bx bx-home"></i>
+                    Elimu Plaza 2<span class="floor">nd</span> Floor
+                </li>
+                <li>
+                    <i class="bx bx-envelope-open"></i>
+                    info@designs.co.ke
+                </li>
+                <li>
+                    <i class="bx bx-home"></i>
+                    Elimu Plaza 2<span class="floor">nd</span> Floor
+                </li>
+                <li>
+                    <i class="bx bx-envelope-open"></i>
+                    info@designs.co.ke
+                </li>
+               </ul>
+           </div>
+       </div>
+    </div>
+</section>
+
+<footer>
+    <p>Designed By Zalego Academy Class Patience</p>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+</html>

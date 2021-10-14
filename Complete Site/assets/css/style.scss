@@ -1,0 +1,132 @@
+// importing in SCSS use @use or @import
+// @import "./variables";
+// @import "./nav";
+
+// Variables
+$primary-color: #39720e;
+$hover-color: #66cf15;
+$white-color: #f3f3f3;
+$btn-padding: 20px;
+
+// Mixins Functions
+@mixin titleStyles($fontSize, $lineHeight) {
+    color: $primary-color;
+    font-size: $fontSize;
+    line-height: $lineHeight;    
+}
+
+
+// Button styling mixins
+@mixin buttonStyling {
+    background: $primary-color;
+    color: $white-color;
+    padding-left: $btn-padding;
+    padding-right: $btn-padding;
+    // border-radius: 0px!important;
+}
+
+
+// Nav  section
+nav {
+  background-color: $primary-color !important;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  ul li{
+      padding-bottom: 20px;
+      padding-top: 20px;
+      padding-left: 15px;
+      padding-right: 15px;
+    &:hover{
+        background: $hover-color;
+    }
+
+      a{
+          color: $white-color!important;
+          font-size: 20px;
+      }
+  }
+}
+
+
+// About Section
+.about{
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+
+    a.btn{
+       @include buttonStyling();
+    }
+
+    h2{
+        // Calling a mixin: we use @include
+        @include titleStyles(40px, 20px);
+        &:hover{
+            color: $hover-color;
+            text-decoration: underline;
+        }
+    }
+
+}
+
+// Design section
+.designs {
+    // Extending a class, 
+    @extend .about;
+    background: linear-gradient(to right, #f1f1f1, #f2f2f2);
+
+    h2{
+        padding-bottom: 10px;
+    }
+
+    img{
+        &:hover{
+            filter: drop-shadow(2px 4px 4px #39720E);
+        }
+    }
+   
+}
+
+// Contact Page
+.contact{
+    @extend .about;
+
+    p{
+        font-size: 16px;
+        padding-left: $btn-padding;
+    }
+
+    .card{
+        padding: $btn-padding;
+
+        button{
+            @include buttonStyling();
+            margin-top: $btn-padding;
+        }
+
+    }
+
+    input, textarea {
+        &:focus{
+            background-color: $white-color;
+            border-color: $hover-color!important;
+            box-shadow: 0 0 .5rem .5rem $hover-color;
+            outline: 0;
+        }
+    }
+
+    .card.address{
+        padding-left: $btn-padding;
+        padding-right: $btn-padding;
+
+        ul{
+            list-style-type: none;
+
+            li:not(:last-child){
+                margin-bottom: 25px;
+            }
+        }
+
+    }
+}
+
